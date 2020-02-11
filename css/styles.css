@@ -28,9 +28,10 @@ h4 {
     content: '';
     position: absolute;
     bottom: 0;
-    left: calc(50% - 60px);
-    width: 120px;
-    height: 1px;
+    left: calc(50% - 90px);
+    width: 180px;
+    height: 2px;
+    border-top: 1px solid #f8f8f8;
     background-color: rgba(0,0,0,0.2);
 }
 
@@ -88,6 +89,28 @@ h4 {
     margin-bottom: 30px;
     font-size: 3em;
     color: #00938b;
+}
+
+.introduction-section .introduction-text h3 {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.introduction-section .introduction-text .introduction-lead {
+    margin-bottom: 0;
+    font-size: 23px;
+}
+
+.introduction-section .introduction-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    height: 3px;
+    background-color: #e7e7e7;
 }
 
 @media (min-width: 992px) {    
