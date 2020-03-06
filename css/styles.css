@@ -16,6 +16,11 @@ h4 {
     font-family: "Fira Sans",Helvetica,Arial,sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .section-heading {
     position: relative;
     padding-bottom: 40px;
@@ -239,6 +244,10 @@ h4 {
     /* background-color: #f8f8f8; */
 }
 
+.footer-secondary {
+    background-color: #f8f8f8;;
+}
+
 .footer-nav {
     list-style: none;
     display: flex;
@@ -253,8 +262,21 @@ h4 {
     color: #337ab7;
 }
 
-.footer-secondary {
-    background-color: #f8f8f8;;
+.footer-column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 48%;
+}
+
+.footer-column.left-col {
+    text-align: right;
+}
+
+.footer-column.left-col p a {
+    display: inline-block;
 }
 
 p.copyright {
@@ -270,5 +292,29 @@ p.copyright {
 @media (min-width: 992px) {
     .about-me-section {
         padding: 80px 0;
+    }
+}
+
+.payment-methods-section {
+    padding: 35px 0;
+    font-size: 16px;
+}
+
+.payment-method:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .payment-methods-section {
+        padding: 80px 0;
+    }
+
+    .payment-methods-section .payments-logo {
+        max-width: 50%;
+        margin: 20px 0;
+    }
+
+    .payment-method:not(:last-child) {
+        margin-bottom: 50px;
     }
 }
