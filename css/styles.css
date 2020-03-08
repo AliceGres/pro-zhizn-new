@@ -264,19 +264,11 @@ img {
 
 .footer-column-container {
     display: flex;
-    justify-content: space-between;
-}
-
-.footer-column {
-    width: 48%;
+    flex-direction: column;
 }
 
 .footer-column.left-col {
-    text-align: right;
-}
-
-.footer-column.left-col .footer-nav {
-    justify-content: flex-end;
+    order: 1;
 }
 
 .footer-column.left-col p a {
@@ -286,6 +278,25 @@ img {
 p.copyright {
     margin: 15px 0 0;
     font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .footer-column-container {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    .footer-column {
+        width: 48%;
+    }
+    
+    .footer-column.left-col {
+        text-align: right;
+    }
+    
+    .footer-column.left-col .footer-nav {
+        justify-content: flex-end;
+    }
 }
 
 .contact a {
@@ -312,6 +323,10 @@ p.copyright {
     margin-bottom: 30px;
 }
 
+.payment-methods-section .payments-logo {    
+    margin: 20px 0;
+}
+
 @media (min-width: 992px) {
     .payment-methods-section {
         padding: 80px 0;
@@ -319,7 +334,6 @@ p.copyright {
 
     .payment-methods-section .payments-logo {
         max-width: 50%;
-        margin: 20px 0;
     }
 
     .payment-method:not(:last-child) {
