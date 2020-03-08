@@ -275,6 +275,10 @@ img {
     text-align: right;
 }
 
+.footer-column.left-col .footer-nav {
+    justify-content: flex-end;
+}
+
 .footer-column.left-col p a {
     display: inline-block;
 }
@@ -282,6 +286,10 @@ img {
 p.copyright {
     margin: 15px 0 0;
     font-size: 12px;
+}
+
+.contact a {
+    color: inherit;
 }
 
 .about-me-section {
