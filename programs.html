@@ -115,12 +115,7 @@
                                     <input name="phone" type="tel" class="form-control" placeholder="Телефон" id="phone" required="">
                                 </div>
 
-                                <!-- <div class="form-group">
-                                    <textarea name="phone" type="tel" class="form-control" placeholder="Комментарий" id="comment">                                        
-                                    </textarea>
-                                </div> -->
-
-                                <input type="button" onclick="serverConnector.send()" class="btn btn-primary" data-toggle="success-modal" value="Отправить" id="submit">
+                                <input type="button" onclick="serverConnector.send()" class="btn btn-primary" data-toggle="modal" value="Отправить" id="submit">
                             </form>
                         </div>
                     </div>
@@ -128,8 +123,25 @@
                     <a href="#program-details-1" data-toggle="collapse" role="button">Свернуть</a>
                 </div>        
             </section>    
+        </div> 
+
+        <div class="modal" id="success" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title">Заявка успешно отправлена</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>×</span>
+                        </button>
+                    </div>
+    
+                    <div class="modal-body text-center">
+                        <h2>Спасибо!</h2>
+                        <p class="lead">Мы свяжемся с Вами в ближайшее время.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
     </main>
 
     <footer class="footer-section footer-secondary">
