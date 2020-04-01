@@ -187,6 +187,12 @@ img {
 .item-text {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.item-text .btn-primary {
+    margin-top: auto;
+    align-self: flex-end;
 }
 
 .item-text p:last-child {
@@ -397,6 +403,7 @@ p.copyright {
 
 .program-section {
     padding: 60px 0;
+    border-bottom: 1px solid #e7e7e79f;
 }
 
 .program-section .program-wrapper {
@@ -468,9 +475,6 @@ p.copyright {
 }
 
 @media (min-width: 1200px) {
-    .program-section .program-wrapper {
-        align-items: stretch;
-    }
 
     .program-text .more-info {
         margin-top: auto;
