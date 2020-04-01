@@ -57,14 +57,15 @@ img {
     background-color: #00675b;
 }
 
+/* Navigation */
+
 .navbar {
     border-bottom: 1px solid #e7e7e7;
     background-color: #ffffff;
 }
 
 .navbar-brand {
-    max-width: 330px;
-    padding-right: 15px;
+    max-width: 250px;
 }
 
 .navbar-brand img {
@@ -73,7 +74,7 @@ img {
 
 .navbar-brand h4 {
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 14px;
     color: #777777;
     white-space: normal;
 }
@@ -82,19 +83,30 @@ img {
     font-size: 18px;
 }
 
+@media (min-width: 768px) {
+    .navbar-brand {
+        max-width: 330px;
+    }
+
+    .navbar-brand h4 {
+        font-size: 18px;
+    }
+}
+
 .introduction-section .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 115px;
 }
 
 .introduction-section .image-wrapper {
     padding: 0 15px;
 }
 
-.introduction-section .image-wrapper img {
+.introduction-section .image-wrapper {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .introduction-section .introduction-text {
@@ -105,15 +117,15 @@ img {
 .introduction-section .introduction-text h1 {
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 3em;
+    font-size: 35px;
     color: #00938b;
 }
 
 .introduction-section .introduction-text h3 {
     position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 40px;
-    font-size: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
 }
 
 .introduction-section .introduction-text h3::after {
@@ -128,29 +140,70 @@ img {
 
 .introduction-section .introduction-text .introduction-lead {
     margin-bottom: 0;
-    font-size: 23px;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {    
+
+    .introduction-section .image-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .introduction-section .introduction-text h1 {
+        font-size: 50px;
+    }
+
+    .introduction-section .introduction-text h3,
+    .introduction-section .introduction-text .introduction-lead {
+        font-size: 21px;
+    }
 }
 
 @media (min-width: 992px) {    
     .introduction-section .container {
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
-        padding-top: 75px;
+        padding-top: 130px;
     }
     
     .introduction-section .image-wrapper {        
         width: 60%;
-        order: 2;
+        margin-bottom: 0;
     }
 
     .introduction-section .introduction-text {        
         width: 42%;
-        order: 1;
         text-align: left;
+    }
+
+    .introduction-section .introduction-text h1 {
+        font-size: 45px;
+    }
+
+    .introduction-section .introduction-text h3 {
+        font-size: 20px;
+    }
+
+    .introduction-section .introduction-text .introduction-lead {
+        font-size: 18px;
     }
 
     .introduction-section .introduction-text h3::after {
         left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .introduction-section .introduction-text h1 {
+        font-size: 54px;
+    }
+
+    .introduction-section .introduction-text h3 {
+        font-size: 24px;
+    }
+
+    .introduction-section .introduction-text .introduction-lead {
+        font-size: 23px;
     }
 }
 

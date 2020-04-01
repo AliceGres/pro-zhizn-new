@@ -1,20 +1,20 @@
 
 var serverConnector =
 {
-    send: function ()
+    send: function (formId)
     {
-        var check = document.getElementById('contactForm');
+        var check = document.getElementById(formId);
         if (check.checkValidity())
         {
             $.ajax({
                 url:"mailer.php",
-                data: $('#contactForm').serialize(),
+                data: $('#' + formId).serialize(),
                 dataType: "json",
                 method: 'post'
             }).done(function(data) {
                 if (data.ok)
                 {
-                    $("#contactForm")[0].reset();
+                    $('#' + formId)[0].reset();
                     $("#success").modal("show");
                 }
                 else
