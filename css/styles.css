@@ -58,10 +58,6 @@ img {
 }
 
 .navbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     border-bottom: 1px solid #e7e7e7;
     background-color: #ffffff;
 }
