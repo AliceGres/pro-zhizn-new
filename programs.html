@@ -103,8 +103,7 @@
                                 <h3>Подать заявку на участие</h3>
 
                                 <p>Чтобы получить дополнительную информацию или подать заявку на участие, укажите Ваши контактные данные, и мы свяжемся с Вами.</p>
-                            </div>
-                            
+                            </div>                            
 
                             <form name="contactForm" id="contactForm1" class="contact-form">
                                 <div class="form-group">
@@ -116,6 +115,7 @@
                                 <div class="form-group">
                                     <input name="phone" type="tel" class="form-control" placeholder="Телефон" id="phone" required="">
                                 </div>
+                                <input type="text" class="hidden" value="Онкопациент, семья, социум" name="seminar">
 
                                 <input type="button" onclick="serverConnector.send('contactForm1')" class="btn btn-primary" data-toggle="modal" value="Отправить" id="submit">
                             </form>
@@ -159,8 +159,7 @@
                                 <h3>Подать заявку на участие</h3>
 
                                 <p>Чтобы получить дополнительную информацию или подать заявку на участие, укажите Ваши контактные данные, и мы свяжемся с Вами.</p>
-                            </div>
-                            
+                            </div>                            
 
                             <form name="contactForm" id="contactForm2" class="contact-form">
                                 <div class="form-group">
@@ -172,6 +171,7 @@
                                 <div class="form-group">
                                     <input name="phone" type="tel" class="form-control" placeholder="Телефон" id="phone" required="">
                                 </div>
+                                <input type="text" class="hidden" value="Группа поддержки для онкопациентов в ремиссии" name="seminar">
 
                                 <input type="button" onclick="serverConnector.send('contactForm2')" class="btn btn-primary" data-toggle="modal" value="Отправить" id="submit">
                             </form>
@@ -233,6 +233,7 @@
                                 <div class="form-group">
                                     <input name="phone" type="tel" class="form-control" placeholder="Телефон" id="phone" required="">
                                 </div>
+                                <input type="text" class="hidden" value="Профилактика эмоционального выгорания" name="seminar">
 
                                 <input type="button" onclick="serverConnector.send('contactForm3')" class="btn btn-primary" data-toggle="modal" value="Отправить" id="submit">
                             </form>
@@ -296,6 +297,8 @@
                                 <div class="form-group">
                                     <input name="phone" type="tel" class="form-control" placeholder="Телефон" id="phone" required="">
                                 </div>
+
+                                <input type="text" class="hidden" value="Особенности работы с низкомотивированными клиентами" name="seminar">
 
                                 <input type="button" onclick="serverConnector.send('contactForm4')" class="btn btn-primary" data-toggle="modal" value="Отправить" id="submit">
                             </form>
