@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 h1,
@@ -23,9 +23,9 @@ img {
 
 .section-heading {
     position: relative;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-    font-size: 42px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 36px;
     text-align: center;
 }
 
@@ -59,6 +59,14 @@ img {
 
 .hidden {
     display: none;
+}
+
+@media (min-width: 768px) {
+    .section-heading {
+        font-size: 40px;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+    }
 }
 
 /* Navigation */
@@ -97,6 +105,8 @@ img {
     }
 }
 
+/* introduction-section */
+
 .introduction-section .container {
     display: flex;
     flex-direction: column;
@@ -104,35 +114,35 @@ img {
     padding-top: 115px;
 }
 
-.introduction-section .image-wrapper {
+.image-wrapper {
     padding: 0 15px;
 }
 
-.introduction-section .image-wrapper {
+.image-wrapper {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.introduction-section .introduction-text {
+.introduction-text {
     padding: 0 15px;
     text-align: center;
 }
 
-.introduction-section .introduction-text h1 {
+.introduction-text h1 {
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 35px;
+    font-size: 45px;
     color: #00938b;
 }
 
-.introduction-section .introduction-text h3 {
+.introduction-text h3 {
     position: relative;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 21px;
 }
 
-.introduction-section .introduction-text h3::after {
+.introduction-text h3::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -142,23 +152,22 @@ img {
     background-color: #e7e7e7;
 }
 
-.introduction-section .introduction-text .introduction-lead {
+.introduction-lead {
     margin-bottom: 0;
     font-size: 18px;
 }
 
 @media (min-width: 768px) {    
-
-    .introduction-section .image-wrapper {
+    .image-wrapper {
         margin-bottom: 40px;
     }
 
-    .introduction-section .introduction-text h1 {
+    .introduction-text h1 {
         font-size: 50px;
     }
 
-    .introduction-section .introduction-text h3,
-    .introduction-section .introduction-text .introduction-lead {
+    .introduction-text h3,
+    .introduction-text .introduction-lead {
         font-size: 21px;
     }
 }
@@ -167,62 +176,62 @@ img {
     .introduction-section .container {
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding-top: 130px;
+        padding: 130px 0 20px;
     }
     
-    .introduction-section .image-wrapper {        
+    .image-wrapper {        
         width: 60%;
         margin-bottom: 0;
     }
 
-    .introduction-section .introduction-text {        
+    .introduction-text {        
         width: 42%;
         text-align: left;
     }
 
-    .introduction-section .introduction-text h1 {
+    .introduction-text h1 {
         font-size: 45px;
     }
 
-    .introduction-section .introduction-text h3 {
+    .introduction-text h3 {
         font-size: 20px;
     }
 
-    .introduction-section .introduction-text .introduction-lead {
+    .introduction-text .introduction-lead {
         font-size: 18px;
     }
 
-    .introduction-section .introduction-text h3::after {
+    .introduction-text h3::after {
         left: 0;
     }
 }
 
 @media (min-width: 1200px) {
-    .introduction-section .introduction-text h1 {
+    .introduction-section .container {
+        padding-bottom: 40px;
+    }
+
+    .introduction-text h1 {
         font-size: 54px;
     }
 
-    .introduction-section .introduction-text h3 {
+    .introduction-text h3 {
         font-size: 24px;
     }
 
-    .introduction-section .introduction-text .introduction-lead {
+    .introduction-text .introduction-lead {
         font-size: 23px;
     }
 }
 
-.working-fields-section {
-    padding-top: 60px;
-    font-size: 15px;
-}
+/* working-fields-section */
 
-.working-fields-container {
-    display: flex;
-    flex-direction: column;
+.working-fields-section {
+    padding: 60px 0 20px;
 }
 
 .working-fields-item {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +254,12 @@ img {
 
 .item-text .btn-primary {
     margin-top: auto;
-    align-self: flex-end;
+    align-self: center;
+}
+
+.item-text .btn-primary:hover,
+.item-text .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #00675b;
 }
 
 .item-text p:last-child {
@@ -280,6 +294,7 @@ img {
         flex-shrink: 0;
         margin-right: 35px;
         background-image: url('../img/individual-therapy.jpg');
+        background-position: center;
         background-size: cover;
     }
 
@@ -301,6 +316,10 @@ img {
 
     .item-text .more-info {
         margin-top: auto;
+        align-self: flex-end;
+    }
+
+    .item-text .btn-primary {
         align-self: flex-end;
     }
 }
@@ -354,7 +373,6 @@ img {
     padding: 30px 0;
     font-size: 14px;    
     border-top: 1px solid #e7e7e7;
-    /* background-color: #f8f8f8; */
 }
 
 .footer-secondary {
@@ -473,8 +491,9 @@ p.copyright {
 
 .program-heading {
     margin-bottom: 15px;
-    font-size: 42px;
+    font-size: 33px;
     color: #00938b;
+    word-break: break-word;
 }
 
 .program-text {
@@ -485,7 +504,7 @@ p.copyright {
     position: relative;
     padding-bottom: 20px;   
     margin-bottom: 20px; 
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .program-text h3::after {
@@ -498,6 +517,12 @@ p.copyright {
     background-color: #e7e7e7;
 }
 
+@media (min-width: 768px) {
+    .program-image {
+        width: 70%;
+    }
+}
+
 @media (min-width: 992px) {
     .program-section {
         text-align: left;
@@ -507,6 +532,10 @@ p.copyright {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    .program-heading {
+        font-size: 42px;
     }
 
     .program-image {
@@ -522,15 +551,12 @@ p.copyright {
         text-align: left;
     }
 
+    .program-text h3 {
+        font-size: 23px;
+    }
+
     .program-text h3::after {
         left: 0;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .program-text .more-info {
-        margin-top: auto;
     }
 }
 
