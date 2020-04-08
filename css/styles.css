@@ -206,10 +206,6 @@ img {
 }
 
 @media (min-width: 1200px) {
-    .introduction-section .container {
-        padding-bottom: 40px;
-    }
-
     .introduction-text h1 {
         font-size: 54px;
     }
@@ -271,7 +267,7 @@ img {
 
 @media (min-width: 992px) {
     .working-fields-section {
-        padding-top: 90px;
+        padding-top: 80px;
     }
 
     .working-fields-item {
