@@ -111,7 +111,7 @@ img {
 
 /* introduction-section */
 
-.introduction-section .container {
+.introduction-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,7 +172,7 @@ img {
 }
 
 @media (min-width: 992px) {    
-    .introduction-section .container {
+    .introduction-section {
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 120px 15px 20px;
@@ -222,7 +222,7 @@ img {
 /* working-fields-section */
 
 .working-fields-section {
-    padding: 60px 0 20px;
+    padding: 60px 15px 20px;
 }
 
 .working-fields-item {
@@ -322,7 +322,7 @@ img {
 /* authors-section */
 
 .authors-section {
-    padding: 60px 0;
+    padding: 60px 15px 20px;
     background-color: #f8f8f8;
 }
 
@@ -330,18 +330,18 @@ img {
     padding-bottom: 0;
 }
 
-.authors-section .authors-container {
+.authors-section .section-heading::after {
+    display: none;
+}
+
+.authors-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.authors-section .author {
+.author {
     margin-bottom: 30px;
     text-align: center;
-}
-
-.authors-section .section-heading::after {
-    display: none;
 }
 
 .img-author {
@@ -353,15 +353,15 @@ img {
 
 @media (min-width: 992px) {
     .authors-section {
-        padding: 90px 0 20px;
+        padding-top: 90px;
     }
     
-    .authors-section .authors-container {
+    .authors-wrapper {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .authors-section .author {
+    .author {
         width: 47%;
     }
 }
