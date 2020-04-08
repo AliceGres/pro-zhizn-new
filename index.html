@@ -87,7 +87,7 @@
                                 <p>Консультация оплачивается только после согласования по времени со специалистом по E-mail / WhatsApp / Viber / Telegram.<br>
                                 Оплата производится в белорусских рублях. Для жителей других стран будет произведен перерасчет по курсу их банка. Стоимость консультации <b>115 рублей</b>.</p>
 
-                                <a href="#" class="btn btn-primary">Оплатить консультацию</a>
+                                <a href="https://checkout.bepaid.by/v2/confirm_order/prd_612f78274082e1cf/9937" class="btn btn-primary">Оплатить консультацию</a>
                             </div>
                         </div>                            
                     </div>
@@ -97,7 +97,6 @@
 
                         <div class="item-info">
                             <div class="item-image supervision"></div>
-                            <!-- <img src="img/groups.jpg" alt="Супервизия" class="item-image"> -->
 
                             <div class="item-text">
                                 <p>Форма консультирования специалиста более опытным,
@@ -115,7 +114,6 @@
 
                         <div class="item-info">
                             <div class="item-image programs"></div>
-                            <!-- <img src="img/programs.jpg" alt="Семинары" class="item-image">-->
 
                             <div class="item-text">
                                 <p>Форма проведения обучающих занятий по определённой
@@ -143,7 +141,7 @@
                     </div>
 
                     <div class="author">
-                        <img class="img-author" src="img/malash1.jpg" alt="Инна Малаш">
+                        <img class="img-author" src="img/malash.jpg" alt="Инна Малаш">
                         <h3>Инна Малаш</h3>
                         <p>Психолог, когнитивно-поведенческий терапевт, детский психолог, онкопсихолог.</p>
 
@@ -152,6 +150,24 @@
                 </div>
             </div>
         </section>
+
+        <div class="modal" id="payment-success" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title">Оплата успешно получена</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>×</span>
+                        </button>
+                    </div>
+    
+                    <div class="modal-body text-center">
+                        <h2>Спасибо!</h2>
+                        <p class="lead">Ваш платеж принят банком.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer-section">
@@ -178,7 +194,7 @@
                 <div class="footer-column left-col">
                     <ul class="footer-nav">
                         <li><a href="payment-methods.html">Как оплатить</a></li>
-                        <li><a href="oferta.pdf">Договор оферты</a></li>
+                        <li><a href="oferta.pdf" target="_blank">Договор оферты</a></li>
                     </ul> 
                     
                     <p>
@@ -196,6 +212,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

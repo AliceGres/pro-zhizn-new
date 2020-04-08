@@ -43,3 +43,9 @@ var serverConnector =
 
     }
 }
+
+$(document).ready(function() {
+    if(window.location.href.indexOf('#payment-success') != -1) {
+      $('#payment-success').modal('show');
+    }  
+  });
