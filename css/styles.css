@@ -423,6 +423,11 @@ img {
     border-bottom: 1px solid #e7e7e79f;
 }
 
+.program-item:last-of-type {
+    border-bottom: none;
+}
+
+
 .program-wrapper {
     display: flex;
     flex-direction: column;
