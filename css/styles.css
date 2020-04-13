@@ -83,6 +83,7 @@ img {
 /* Navigation */
 
 .navbar {
+    padding: 3px 15px;
     border-bottom: 1px solid #e7e7e7;
     background-color: #ffffff;
 }
@@ -117,6 +118,12 @@ img {
 
     .navbar-brand h4 {
         font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding: 8px 15px;
     }
 }
 
@@ -233,7 +240,7 @@ img {
 /* working-fields-section */
 
 .working-fields-section {
-    padding: 60px 15px 20px;
+    padding: 70px 15px 20px;
 }
 
 .working-fields-item {
@@ -333,7 +340,7 @@ img {
 /* authors-section */
 
 .authors-section {
-    padding: 60px 15px 20px;
+    padding: 70px 15px 20px;
     background-color: #f8f8f8;
 }
 
