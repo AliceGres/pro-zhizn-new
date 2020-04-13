@@ -68,6 +68,10 @@ img {
 	overflow: hidden;
 }
 
+.invalid {
+    border-color: #dc3545;
+}
+
 @media (min-width: 768px) {
     .section-heading {
         font-size: 40px;

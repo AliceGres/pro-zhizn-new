@@ -35,7 +35,7 @@ var serverConnector =
                 {
                     if (!el.checkValidity())
                     {
-                        el.classList.add('is-invalid');
+                        el.classList.add('invalid');
                     }
                 }
             }
